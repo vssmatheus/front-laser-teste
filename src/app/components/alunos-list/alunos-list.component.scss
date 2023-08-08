@@ -1,0 +1,28 @@
+.container {
+  min-height: auto;
+  padding: 3rem 4rem;
+  overflow: hidden;
+}
+
+.action-button {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  width: 2rem;
+  height: 2rem;
+  align-items: center;
+  justify-content: center;
+
+  mat-icon {
+    font-size: 14pt;
+    line-height: 24px;
+    align-self: center;
+    display: flex;
+  }
+
+  &:hover{
+    border-radius: 50px;
+    background: #96b5e45e;
+  }
+}
