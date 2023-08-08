@@ -23,7 +23,7 @@ export class AlunosListComponent implements OnInit {
 
   pageSize: number = 10;
   pageIndex: number = 0;
-  lowValue:number = 0;
+  lowValue: number = 0;
   pageSizeOptions: number[] = [5, 10, 25, 100];
 
   constructor(
@@ -43,20 +43,17 @@ export class AlunosListComponent implements OnInit {
     });
   }
 
-
   updatePage(): void {
     const startIndex = this.pageIndex * this.pageSize;
     const endIndex = startIndex + this.pageSize;
     this.alunosPaginados = this.alunos.slice(startIndex, endIndex);
   }
 
-
   onPageChange(event: any): void {
     this.pageIndex = event.pageIndex;
     this.pageSize = event.pageSize;
     this.updatePage();
   }
-
 
   deletarAluno(id: number): void {
     const confirmacao = window.confirm(
@@ -72,6 +69,18 @@ export class AlunosListComponent implements OnInit {
         });
       });
     }
+  }
+
+  filtrarAlunos(event: any): void {
+    const texto = event.target.value.trim().toLowerCase();
+    this.alunosPaginados = this.alunos.filter((aluno) => {
+      return (
+        aluno.nome.toLowerCase().includes(texto) ||
+        aluno.sobrenome.toLowerCase().includes(texto) ||
+        aluno.idade.toString().includes(texto) ||
+        aluno.sexo.toLowerCase().includes(texto)
+      );
+    });
   }
 
   openDialog(aluno?: any): void {
