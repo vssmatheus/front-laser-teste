@@ -22,13 +22,13 @@
     display: flex;
   }
 
-  &:hover{
+  &:hover {
     border-radius: 50px;
     background: #96b5e45e;
   }
 }
 
-.header-content{
+.header-content {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -48,7 +48,7 @@
     border: none;
     cursor: pointer;
 
-    &:hover{
+    &:hover {
       background: #1964af;
     }
   }

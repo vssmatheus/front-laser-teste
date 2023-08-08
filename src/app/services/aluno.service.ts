@@ -4,10 +4,11 @@ import { Observable } from 'rxjs';
 import { Aluno } from '../components/alunos-list/interfaces/aluno.interface';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class AlunoService {
-  private apiUrl = 'https://api-teste-laserchip-2023-200528dc7097.herokuapp.com';
+  private apiUrl =
+    'https://api-teste-laserchip-2023-200528dc7097.herokuapp.com';
 
   constructor(private http: HttpClient) {}
 

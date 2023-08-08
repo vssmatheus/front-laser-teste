@@ -4,14 +4,17 @@
       <a routerLink="/alunos-form" routerLinkActive="active-link">
         Dashboard
       </a>
-      <a routerLink="/alunos" routerLinkActive="active-link" >
-        Alunos
-      </a>
+      <a routerLink="/alunos" routerLinkActive="active-link"> Alunos </a>
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
     <div class="bar-container">
-      <button mat-fab color="primary" class="toggle-button" (click)="sidenav.toggle()">
+      <button
+        mat-fab
+        color="primary"
+        class="toggle-button"
+        (click)="sidenav.toggle()"
+      >
         <mat-icon>menu</mat-icon>
       </button>
     </div>

@@ -9,7 +9,7 @@ import { AlunosFormComponent } from './alunos-form.component';
   imports: [
     CommonModule,
     MatDialogModule,
-    RouterModule.forChild([{ path: '', component: AlunosFormComponent }])
-  ]
+    RouterModule.forChild([{ path: '', component: AlunosFormComponent }]),
+  ],
 })
-export class AlunosFormModule { }
+export class AlunosFormModule {}

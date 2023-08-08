@@ -1,6 +1,10 @@
-<form class="form-content" (ngSubmit)="adicionarOuEditarAluno()" #alunoForm="ngForm">
+<form
+  class="form-content"
+  (ngSubmit)="adicionarOuEditarAluno()"
+  #alunoForm="ngForm"
+>
   <div class="title-container">
-    <h2>{{ modoEdicao ? "Editar Aluno" : "Adicionar Aluno" }}</h2>
+    <h2>{{ modoEdicao ? 'Editar Aluno' : 'Adicionar Aluno' }}</h2>
   </div>
   <mat-form-field>
     <input
@@ -39,7 +43,7 @@
   </mat-form-field>
   <div class="button-container">
     <button mat-raised-button color="primary" type="submit">
-      {{ modoEdicao ? "Salvar" : "Adicionar" }}
+      {{ modoEdicao ? 'Salvar' : 'Adicionar' }}
     </button>
   </div>
 </form>

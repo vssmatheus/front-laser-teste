@@ -8,7 +8,7 @@ describe('AlunoFormComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [AlunoFormComponent]
+      declarations: [AlunoFormComponent],
     });
     fixture = TestBed.createComponent(AlunoFormComponent);
     component = fixture.componentInstance;
