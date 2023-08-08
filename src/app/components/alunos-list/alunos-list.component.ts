@@ -85,7 +85,7 @@ export class AlunosListComponent implements OnInit {
 
   openDialog(aluno?: any): void {
     const dialogRef = this.dialog.open(AlunoFormComponent, {
-      width: '500px',
+      width: '720px',
       data: { aluno },
     });
 

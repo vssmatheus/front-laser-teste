@@ -3,12 +3,18 @@
     <h2>Alunos</h2>
     <div class="header-content">
       <mat-form-field class="search-field">
-        <input matInput placeholder="Buscar aluno" (keyup)="filtrarAlunos($event)">
+        <input
+          matInput
+          placeholder="Buscar aluno"
+          (keyup)="filtrarAlunos($event)"
+        />
         <button mat-button matSuffix>
           <mat-icon>search</mat-icon>
         </button>
       </mat-form-field>
-      <button mat-button (click)="openDialog()">Adicionar aluno</button>
+      <button class="button-add" mat-button (click)="openDialog()">
+        <mat-icon>add</mat-icon>Adicionar aluno
+      </button>
     </div>
   </div>
 
