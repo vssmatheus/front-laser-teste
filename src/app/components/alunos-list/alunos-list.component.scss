@@ -1,7 +1,8 @@
 .container {
-  min-height: auto;
-  padding: 3rem 4rem;
-  overflow: hidden;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 4rem;
 }
 
 .action-button {
@@ -25,4 +26,23 @@
     border-radius: 50px;
     background: #96b5e45e;
   }
+}
+
+.header-content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.search-field {
+  width: 500px;
+}
+
+button {
+  margin-right: 8px;
+  cursor: pointer;
+  z-index: 1;
+  background: none;
+  border: none;
+  outline: none;
 }
