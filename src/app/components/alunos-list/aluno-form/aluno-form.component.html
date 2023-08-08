@@ -1,5 +1,7 @@
-<h2>{{ modoEdicao ? "Editar Aluno" : "Adicionar Aluno" }}</h2>
-<form (ngSubmit)="adicionarOuEditarAluno()" #alunoForm="ngForm">
+<form class="form-content" (ngSubmit)="adicionarOuEditarAluno()" #alunoForm="ngForm">
+  <div class="title-container">
+    <h2>{{ modoEdicao ? "Editar Aluno" : "Adicionar Aluno" }}</h2>
+  </div>
   <mat-form-field>
     <input
       matInput
@@ -31,13 +33,15 @@
   <mat-form-field>
     <mat-label>Sexo</mat-label>
     <mat-select [(ngModel)]="aluno.sexo" name="sexo" required>
-      <mat-option value="Masculino">Masculino</mat-option>
-      <mat-option value="Feminino">Feminino</mat-option>
+      <mat-option value="M">Masculino</mat-option>
+      <mat-option value="F">Feminino</mat-option>
     </mat-select>
   </mat-form-field>
-  <button mat-raised-button color="primary" type="submit">
-    {{ modoEdicao ? "Salvar" : "Adicionar" }}
-  </button>
+  <div class="button-container">
+    <button mat-raised-button color="primary" type="submit">
+      {{ modoEdicao ? "Salvar" : "Adicionar" }}
+    </button>
+  </div>
 </form>
 
 <button
