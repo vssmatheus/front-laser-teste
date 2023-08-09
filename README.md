@@ -1,24 +1,31 @@
-# FrontLaserTeste
+# Desafio Front-end CRUD Alunos
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.8.
+Desenvolvimento da interface de um CRUD de alunos, consumindo os dados da seguinte api:
+https://api-teste-laserchip-2023-200528dc7097.herokuapp.com
 
-## Development server
+- Este projeto foi desenvolvido com [Angular CLI](https://github.com/angular/angular-cli) versão 16.1.8
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Comandos para a instalação e start do projeto com (Angular).
 
-## Code scaffolding
+- npm install
+- npm start ou ng serve
+- Navegue para: `http://localhost:4200/`
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Versão do Node.
 
-## Build
+- Node v20.5.0
+- Package Manager: npm 9.8.0
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Tela de Alunos com listagem e Furmulário
 
-## Running unit tests
+![Captura de tela 2023-08-09 010653](https://github.com/vssmatheus/front-laser-teste/assets/38119742/ca3b6a80-1ef6-4ac1-97db-e89e8a127d9d)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+![Captura de tela 2023-08-09 010741](https://github.com/vssmatheus/front-laser-teste/assets/38119742/c75078e3-9bce-4c58-89a9-e0bf3661d0f7)
 
-## Running end-to-end tests
+## Bonus - Tela de Dashbord com dados tratados
+
+![Captura de tela 2023-08-09 010529](https://github.com/vssmatheus/front-laser-teste/assets/38119742/c06adcd9-3198-4ac4-bcc4-da1902fa7080)
+
 
 Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
