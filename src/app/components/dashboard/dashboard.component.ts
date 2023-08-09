@@ -35,15 +35,13 @@ export class DashboardComponent implements OnInit {
           ).length;
 
           this.homensAcima18 = alunos.filter(
-            (pessoa) =>
-              (pessoa.sexo === 'M' && pessoa.idade > 18) || pessoa.idade < 30
+            (pessoa) => pessoa.sexo === 'M' && pessoa.idade > 18
           ).length;
           this.mulheresAcima18 = alunos.filter(
-            (pessoa) =>
-              (pessoa.sexo === 'F' && pessoa.idade > 18) || pessoa.idade < 30
+            (pessoa) => pessoa.sexo === 'F' && pessoa.idade > 18
           ).length;
           this.pessoasAbaixo18 = alunos.filter(
-            (pessoa) => pessoa.idade <= 12 || pessoa.idade < 18
+            (pessoa) => pessoa.idade < 18
           ).length;
         })
       )
