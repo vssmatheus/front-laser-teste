@@ -1,0 +1,68 @@
+.dashboard {
+  padding: 20px;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+
+  .card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    width: 300px;
+    padding: 24px;
+    height: 100px;
+    flex: auto;
+
+    mat-icon {
+      color: #23253f;
+      font-size: 50pt;
+      width: auto;
+      height: auto;
+      margin-right: 2rem;
+    }
+
+    h2 {
+      font-size: 1.2rem;
+      margin-bottom: 2px;
+    }
+    .number {
+      font-size: xx-large;
+      font-weight: bold;
+      margin-top: 16px;
+    }
+  }
+}
+
+.card-chart {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  width: min-content;
+  flex: auto;
+  padding: 24px;
+}
+
+.chart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  margin: 30px;
+  width: 300px;
+  flex: auto;
+
+  canvas {
+    max-width: 100%;
+    max-height: 100%;
+  }
+}

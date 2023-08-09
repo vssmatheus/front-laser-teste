@@ -30,8 +30,18 @@
 .button-container {
   display: flex;
   align-items: center;
-  justify-content: end;
+  justify-content: flex-end;
   width: 100%;
+
+  .button-disabled {
+    background-color: rgb(146, 146, 146);
+    color: white;
+    cursor: not-allowed;
+
+    &:hover {
+      background: rgb(146, 146, 146);
+    }
+  }
 
   button {
     background: #1976d2;

@@ -37,12 +37,16 @@ mat-nav-list {
     margin-top: 2px;
     height: 3rem;
     display: flex;
-    padding: 0 2rem;
+    padding: 0 4rem 0 2rem;
     cursor: pointer;
     align-items: center;
     color: #f0f0f0 !important;
     text-decoration: none;
     transition: background-color 0.3s ease-in-out;
+
+    mat-icon {
+      margin-right: 12px;
+    }
 
     &:hover {
       background: rgb(28, 29, 51);

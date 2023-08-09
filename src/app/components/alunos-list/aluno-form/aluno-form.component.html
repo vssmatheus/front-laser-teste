@@ -13,6 +13,7 @@
       [(ngModel)]="aluno.nome"
       name="nome"
       required
+      (input)="verificarCamposPreenchidos()"
     />
   </mat-form-field>
   <mat-form-field>
@@ -22,6 +23,7 @@
       [(ngModel)]="aluno.sobrenome"
       name="sobrenome"
       required
+      (input)="verificarCamposPreenchidos()"
     />
   </mat-form-field>
   <mat-form-field>
@@ -32,6 +34,7 @@
       name="idade"
       required
       type="number"
+      (input)="verificarCamposPreenchidos()"
     />
   </mat-form-field>
   <mat-form-field>
@@ -42,7 +45,12 @@
     </mat-select>
   </mat-form-field>
   <div class="button-container">
-    <button mat-raised-button color="primary" type="submit">
+    <button
+      [disabled]="!verificarCamposPreenchidos()"
+      [class.button-disabled]="!verificarCamposPreenchidos()"
+      mat-button
+      type="submit"
+    >
       {{ modoEdicao ? 'Salvar' : 'Adicionar' }}
     </button>
   </div>

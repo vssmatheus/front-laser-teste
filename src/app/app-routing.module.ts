@@ -10,11 +10,16 @@ const routes: Routes = [
       ),
   },
   {
-    path: 'alunos-form',
+    path: 'dashboard',
     loadChildren: () =>
-      import('./components/alunos-form/alunos-form.module').then(
-        (m) => m.AlunosFormModule
+      import('./components/dashboard/dashboard.module').then(
+        (m) => m.DasboardModule
       ),
+  },
+  {
+    path: '',
+    pathMatch: 'full',
+    redirectTo: 'alunos',
   },
 ];
 
