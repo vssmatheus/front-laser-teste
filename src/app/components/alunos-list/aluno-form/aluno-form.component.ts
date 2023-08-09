@@ -67,6 +67,15 @@ export class AlunoFormComponent implements OnInit {
     }
   }
 
+  verificarCamposPreenchidos(): boolean {
+    return (
+      this.aluno.nome &&
+      this.aluno.sobrenome &&
+      this.aluno.idade !== undefined &&
+      this.aluno.sexo
+    );
+  }
+
   closeDialog(): void {
     this.dialogRef.close(this.aluno);
   }

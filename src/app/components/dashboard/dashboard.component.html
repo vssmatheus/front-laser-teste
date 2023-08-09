@@ -1,0 +1,46 @@
+<div class="dashboard">
+  <div class="card">
+    <mat-icon>male</mat-icon>
+    <div>
+      <h2>Homens por Idade</h2>
+      <div>
+        entre 18 e 30 anos:
+        <div class="number">{{ homensAcima18 }}</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <mat-icon>female</mat-icon>
+    <div>
+      <h2>Mulheres por Idade</h2>
+      <div>
+        entre 18 e 30 anos:
+        <div class="number">{{ mulheresAcima18 }}</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <mat-icon>person</mat-icon>
+    <div>
+      <h2>Menores</h2>
+      <div>
+        entre 12 e 17:
+        <div class="number">{{ pessoasAbaixo18 }}</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card-chart">
+    <div class="chart">
+      <canvas #doughnutCanvas></canvas>
+    </div>
+  </div>
+
+  <div class="card-chart">
+    <div class="chart">
+      <canvas id="idadeBarChart"></canvas>
+    </div>
+  </div>
+</div>

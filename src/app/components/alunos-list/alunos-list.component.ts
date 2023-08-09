@@ -63,6 +63,7 @@ export class AlunosListComponent implements OnInit {
     if (confirmacao) {
       this.alunoService.deletarAluno(id).subscribe(() => {
         this.alunos = this.alunos.filter((aluno) => aluno.id !== id);
+        this.getAlunos();
 
         this.snackBar.open('Aluno deletado com sucesso!', 'Fechar', {
           duration: 2000,
